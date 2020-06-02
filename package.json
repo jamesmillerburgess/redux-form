@@ -1,6 +1,6 @@
 {
   "name": "redux-form",
-  "version": "8.3.6",
+  "version": "8.3.7",
   "description": "A higher order component decorator for forms using Redux and React",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -9,7 +9,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/redux-form/redux-form"
+    "url": "https://github.com/jamesmillerburgess/redux-form"
   },
   "engines": {
     "node": ">=8.10"
@@ -25,6 +25,7 @@
     "clean": "rimraf dist lib es",
     "lint": "eslint src",
     "prepublishOnly": "npm run lint && npm run test:cov && npm run test:flow && npm run clean && npm run build",
+    "prepare": "npm run lint && npm run test:cov && npm run test:flow && npm run clean && npm run build",
     "validate": "npm run lint && npm run test:cov && npm run test:flow && npm run clean && npm run build && size-limit",
     "test": "jest",
     "test:flow": "node scripts/patch-immutable-flow-error.js && flow check",
