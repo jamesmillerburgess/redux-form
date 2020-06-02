@@ -5,8 +5,6 @@
 coverage
 flow-coverage
 node_modules
-lib
-es
 npm-debug.log
 .DS_Store
 stats.json
